@@ -9,7 +9,7 @@ def mean_pred(y_true, y_pred):
     return K.mean(y_pred)
 
 def load_dataset():
-    train_dataset = h5py.File('datasets/train_happy.h5', "r")
+    train_dataset = h5py.File('./datasets/train_happy.h5', "r")
     train_set_x_orig = np.array(train_dataset["train_set_x"][:]) # your train set features
     train_set_y_orig = np.array(train_dataset["train_set_y"][:]) # your train set labels
 
